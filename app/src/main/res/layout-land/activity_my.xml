@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp">
+
+    <TableLayout
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/tableRow1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/pion1Button"
+                android:layout_width="@dimen/pionWidth"
+                android:layout_height="@dimen/pionHeight"
+                />
+            <Button
+                android:id="@+id/pion2Button"
+                android:layout_width="@dimen/pionWidth"
+                android:layout_height="@dimen/pionHeight"
+                />
+            <Button
+                android:id="@+id/pion3Button"
+                android:layout_width="@dimen/pionWidth"
+                android:layout_height="@dimen/pionHeight"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/tableRow2"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/pion4Button"
+                android:layout_width="@dimen/pionWidth"
+                android:layout_height="@dimen/pionHeight"
+                />
+            <Button
+                android:id="@+id/pion5Button"
+                android:layout_width="@dimen/pionWidth"
+                android:layout_height="@dimen/pionHeight"
+                />
+            <Button
+                android:id="@+id/pion6Button"
+                android:layout_width="@dimen/pionWidth"
+                android:layout_height="@dimen/pionHeight"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/tableRow3"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/pion7Button"
+                android:layout_width="@dimen/pionWidth"
+                android:layout_height="@dimen/pionHeight"
+                />
+            <Button
+                android:id="@+id/pion8Button"
+                android:layout_width="@dimen/pionWidth"
+                android:layout_height="@dimen/pionHeight"
+                />
+            <Button
+                android:id="@+id/pion9Button"
+                android:layout_width="@dimen/pionWidth"
+                android:layout_height="@dimen/pionHeight"
+                />
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/morpion"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/tictactoe" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gameStatus"
+            android:id="@+id/gameStatus"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/try_again"
+            android:id="@+id/tryAgain"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:textSize="25sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
